@@ -1,0 +1,82 @@
+.projects {
+  background-color: steelblue;
+  height: 10%;
+  font-size: 0.7rem;
+
+  &__heading {
+    text-align: center;
+    h1{
+      margin-top: 0;
+      margin-bottom: 5px;
+    }
+  }
+
+  &__project-box {
+    height: 269px;
+    border: solid 1px black;
+    text-align: center;
+    margin-top: 5%;
+
+    @mixin XLarge {
+      margin-top: 2%;
+    }
+
+    img {
+      text-align: center;
+      width: 275px;
+      height: 200px;
+      margin-right: -25px;
+      padding-left: 4rem;
+    }
+
+    .projects__text-box {
+      text-align: center;
+
+      p {
+        display: none;
+      }
+
+      @mixin atLarge {
+        min-height: 215px;
+        padding: 25px;
+        p {
+          display: block;
+        }
+      }
+
+      h1 {
+        font-size: 1rem;
+        margin-top: 0;
+        margin-bottom: 7px;
+      }
+    }
+
+    &--pull-right {
+      padding-top: 0.4rem;
+    }
+
+    .buttons {
+      padding-top: 10px;
+    }
+
+  }
+
+  @mixin atLarge {
+    height: 85vh;
+
+    &__heading {
+      text-align: center;
+
+      h1{
+        margin-top: 0;
+      }
+
+      img {
+        width: 300px;
+        height: 250px;
+        margin-right: -25px;
+      }
+    }
+  }
+
+}

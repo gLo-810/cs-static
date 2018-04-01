@@ -1,0 +1,7 @@
+.page-section {
+  padding: 2% 0;
+
+  &--footer{
+    padding: 0.3rem;
+  }
+}

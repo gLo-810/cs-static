@@ -1,0 +1,47 @@
+.footer-nav {
+  position: relative;
+  height: 7vh;
+  font-size: 0.9rem;
+
+  @mixin atMedium {
+    font-size: 1.8rem;
+  }
+
+  @mixin atLarge {
+    &--pull-right {
+      float: right;
+    }
+  }
+
+  ul {
+    position: relative;
+    padding: 5px;
+    margin: auto 0;
+    text-align: center;
+
+    @mixin atLarge {
+      padding: 0;
+    }
+  }
+
+
+  li {
+    display: inline;
+
+    @mixin atLarge {
+      padding-right: 20px;
+    }
+  }
+
+
+  a {
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    padding: 5px;
+
+    @mixin atMedium {
+      padding: 8px;
+    }
+  }
+}

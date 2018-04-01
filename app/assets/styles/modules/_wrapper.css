@@ -1,0 +1,20 @@
+.wrapper {
+  overflow: hidden;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
+
+  @mixin atMedium {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  @mixin atLarge {
+
+    &--large {
+      padding-left: 25px;
+      padding-right: 15px;
+    }
+
+  }
+}
