@@ -2,7 +2,7 @@
 @import 'base/_variables';
 @import 'base/_mixins';
 @import 'base/_global.css';
-@import 'modules/_hero.css';
+@import 'modules/_video-feed.css';
 @import 'modules/_projects.css';
 @import 'modules/_site-header.css';
 @import 'modules/_primary-nav.css';
