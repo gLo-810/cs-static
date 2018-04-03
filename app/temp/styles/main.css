@@ -465,20 +465,24 @@ body {
 .video-feed {
   position: relative;
   width: 100%;
-  height: 77vh;
+  height: 80vh;
   background-color: orange;
   top: 60px;
 
 }
 
+.video-feed__main-container {
+    padding: 30px 0;
+  }
+
 .video-feed__video-container iframe {
       width: 100%;
-      height: 70.5vh;
+      height: 67.5vh;
     }
 
 .video-feed__chat-container iframe {
       width: 100%;
-      height: 70.5vh;
+      height: 67.5vh;
     }
 
 .store {
@@ -634,11 +638,23 @@ padding-right: -20px;
     }
 
     .col--lg-4 {
-      width: 30%;
+      width: 33%;
+    }
+
+    .col--lg-5 {
+      width: 41.666%;
     }
 
     .col--lg-6 {
       width: 50%;
+    }
+
+    .col--lg-7 {
+      width: 58.3%;
+    }
+
+    .col--lg-8 {
+      width: 66.6%;
     }
 
     .col--lg-9 {
