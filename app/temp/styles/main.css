@@ -626,11 +626,11 @@ padding-right: -20px;
     }
 
     .col--lg-1 {
-      width: 10%;
+      width: 8.33%;
     }
 
     .col--lg-2 {
-      width: 25%;
+      width: 16.66%;
     }
 
     .col--lg-5 {
@@ -706,8 +706,9 @@ padding-right: -20px;
   background-color: #42a1f4;
   height: 25vh;
   position: relative;
-  font-size: 3rem;
-  text-align: center;
+  
+  /* font-size: 3rem;
+  text-align: center; */
 }
 
 .footer-nav {
@@ -767,3 +768,24 @@ padding-right: -20px;
       padding: 8px
   }
   }
+
+.team-container {
+  /* background-color: green; */
+  margin-top: 10px;
+}
+
+/* border: 1px solid black; */
+
+.team-container--inline img, .team-container--inline p {
+    display: inline;
+    }
+
+.team-container--inline img {
+      width: 50px;
+      height: 50px;
+    }
+
+.team-container--inline p {
+      position: absolute;
+      margin-left: 5px;
+    }
