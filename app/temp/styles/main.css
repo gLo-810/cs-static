@@ -488,8 +488,7 @@ body {
 .store {
   background-color: steelblue;
   height: 20vh;
-  font-size: 3rem;
-  text-align: center;
+  padding-top: 0;
 }
 
 .site-header {
@@ -633,6 +632,10 @@ padding-right: -20px;
       width: 16.66%;
     }
 
+    .col--lg-3 {
+      width: 25%;
+    }
+
     .col--lg-5 {
       width: 37.5%;
     }
@@ -693,6 +696,10 @@ padding-right: -20px;
   height: 6vh;
   background-color: navy;
 }
+
+.footer h1 {
+    margin: 0 auto;
+  }
 
 .page-section {
   padding: 2% 0;
@@ -788,4 +795,46 @@ padding-right: -20px;
 .team-container--inline p {
       position: absolute;
       margin-left: 5px;
+    }
+
+.item-container {
+  /* background-color: green;
+  border: 1px solid black; */
+  margin-top: 10px;
+  padding-top: 10px;
+  position: relative;
+  font-size: .9rem;
+
+}
+
+.item-container--inline img, .item-container--inline p {
+    display: inline;
+    }
+
+.item-container--inline img {
+      width: 50px;
+      height: 50px;
+    }
+
+.item-container--inline p {
+      position: absolute;
+      margin-left: 5px;
+    }
+
+.item-container--inline p:first-of-type {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+
+.item-container--inline p:last-of-type {
+      margin-top: 32px;
+      margin-bottom: 0;
+    }
+
+.item-container--inline button {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      -webkit-transform: translate(8.3rem, -3px);
+              transform: translate(8.3rem, -3px);
     }
