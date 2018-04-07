@@ -1,8 +1,7 @@
 .team-random {
-  background-color: #42a1f4;
+  background-color: $lightMatte;
+  font-size: 1.2rem;
   height: 25vh;
   position: relative;
-  
-  /* font-size: 3rem;
-  text-align: center; */
+
 }

@@ -1,5 +1,5 @@
 .store {
-  background-color: steelblue;
+  background-color: $lightMatte;
   height: 20vh;
   padding-top: 0;
 }

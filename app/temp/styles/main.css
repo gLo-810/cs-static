@@ -454,7 +454,8 @@ template {
 
 body {
   font-family: 'Montserrat', sans-serif;
-  color: white;
+  color: rgb(46, 198, 218);
+  font-weight: 600;
 }
 
 * {
@@ -466,8 +467,8 @@ body {
   position: relative;
   width: 100%;
   height: 80vh;
-  background-color: orange;
-  top: 60px;
+  background-color: rgb(103, 103, 103);
+  top: 70px;
 
 }
 
@@ -486,14 +487,14 @@ body {
     }
 
 .store {
-  background-color: steelblue;
+  background-color: rgb(103, 103, 103);
   height: 20vh;
   padding-top: 0;
 }
 
 .site-header {
   position: fixed;
-  background-color: red;
+  background-color: #414141;
   width: 100%;
   z-index: 5;
 }
@@ -515,25 +516,18 @@ body {
 .primary-nav {
     font-size: 1.2rem
 }
-
-    .primary-nav--pull-right {
-      float: right;
-    }
   }
 
 .primary-nav ul {
-    position: relative;
-    top: .96rem;
-    padding:0;
-    margin:auto 0;
+    margin: 0;
     text-align: center;
+    width:100%;
   }
 
 @media (min-width: 1440px) {
 
 .primary-nav ul {
-      padding: 20px 0;
-      top: -.5rem
+      padding: 35px 0 0 0
   }
   }
 
@@ -544,13 +538,13 @@ body {
 @media (min-width: 1440px) {
 
 .primary-nav li {
-      padding-right: 7px
+      padding-left: 4.5%
   }
   }
 
 .primary-nav a {
     text-decoration: none;
-    color: white;
+    color: rgb(46, 198, 218);
     display: inline-block;
     padding: 5px;
   }
@@ -569,6 +563,15 @@ body {
   margin: 0 auto;
 }
 
+.wrapper--section-border {
+    border-top: solid 2px #FF00A2;
+  }
+
+.wrapper--pull-logo-left {
+    -webkit-transform: translateX(-3.1rem);
+            transform: translateX(-3.1rem);
+  }
+
 @media (min-width: 768px) {
 
 .wrapper {
@@ -586,8 +589,27 @@ body {
   }
 
 .logo {
-  max-width: 100px;
+  font-family: 'Ranga', cursive;
+  font-size: 2rem;
+  color: rgb(46, 198, 218);
+  text-shadow: 4px 3px 0px #FF00A2, 5px 3px 0px black;
 }
+
+.logo h1 {
+    margin: 0;
+  }
+
+.logo--border {
+    border-right: 2px solid rgb(191, 0, 122);
+    text-align: center;
+    padding-top: 10px;
+  }
+
+.logo--name {
+    text-shadow: 1px 2px 0px #FF00A2, 2px 2px 0px black;
+    white-space: nowrap;
+    padding-top: 10px;
+  }
 
 .row {
 padding-right: -20px;
@@ -663,38 +685,38 @@ padding-right: -20px;
     .col--lg-9 {
       width: 75%;
     }
+
+    .col--lg-10 {
+      width: 83.33%;
+    }
+
+    .col--lg-11 {
+      width: 91.66%;
+    }
   }
 
 .icons {
   position: relative;
-  font-size: 1.7rem;
+  top: 2rem;
 
 }
 
 .icons i {
-    color: white;
-    font-size: 2rem;
-    padding-right: 20px;
+    color: rgb(46, 198, 218);
+    font-size: 2.3rem;
+    padding-right: 3.5rem;
+    font-weight: 300;
   }
 
-.icons--footer  a > i{
-    font-size: 2.5rem;
-    padding-left: 20%;
+.icons--cart {
+    top: 0;
+    font-weight: 300;
   }
-
-.icons__arrow {
-    position: relative;
-    top: 3.125rem;
-  }
-
-.icons__arrow a > i {
-      font-size: 4.5rem;
-    }
 
 .footer {
   text-align: center;
   height: 6vh;
-  background-color: navy;
+  background-color: #414141;
 }
 
 .footer h1 {
@@ -710,12 +732,11 @@ padding-right: -20px;
   }
 
 .team-random {
-  background-color: #42a1f4;
+  background-color: rgb(103, 103, 103);
+  font-size: 1.2rem;
   height: 25vh;
   position: relative;
-  
-  /* font-size: 3rem;
-  text-align: center; */
+
 }
 
 .footer-nav {
@@ -803,7 +824,7 @@ padding-right: -20px;
   margin-top: 10px;
   padding-top: 10px;
   position: relative;
-  font-size: .9rem;
+  font-size: 1.1rem;
 
 }
 

@@ -1,6 +1,7 @@
 body {
   font-family: 'Montserrat', sans-serif;
-  color: white;
+  color: $mainTeal;
+  font-weight: 600;
 }
 
 * {

@@ -1,4 +1,6 @@
 $mainMatte: #414141;
-
+$hotPink: #FF00A2;
 /*this teal color is equivalent to lighten function in SASS and is postCSS specific*/
 $mainTeal: color(#09bcd3 tint(15%));
+$darkPink: color(#FF00A2 shade(25%));
+$lightMatte: color(#414141 tint(20%))

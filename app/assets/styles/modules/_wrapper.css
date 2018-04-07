@@ -4,6 +4,15 @@
   padding-right: 20px;
   margin: 0 auto;
 
+
+  &--section-border {
+    border-top: solid 2px $hotPink;
+  }
+
+  &--pull-logo-left {
+    transform: translateX(-3.1rem);
+  }
+
   @mixin atMedium {
     padding-left: 50px;
     padding-right: 50px;
