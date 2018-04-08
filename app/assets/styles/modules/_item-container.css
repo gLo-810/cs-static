@@ -12,6 +12,7 @@
     display: inline;
     }
 
+
     img {
       border: 1px solid black;
       width: 60px;
@@ -39,4 +40,15 @@
     }
   }
 
+  &--next-break {
+    font-size: .8rem;
+    img {
+      height: 50px;
+      width: 50px;
+    }
+    p {
+      margin-top: 0 !important;
+      top: 0;
+    }
+  }
 }

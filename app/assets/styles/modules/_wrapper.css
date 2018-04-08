@@ -9,6 +9,10 @@
     border-top: solid 2px $hotPink;
   }
 
+  &--section-border-bottom {
+    border-bottom: solid 2px $hotPink;
+  }
+
   &--pull-logo-left {
     transform: translateX(-3.1rem);
   }
