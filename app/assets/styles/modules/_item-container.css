@@ -1,6 +1,7 @@
 .item-container {
   /* background-color: green;
   border: 1px solid black; */
+  color: $darkTeal;
   margin-top: 10px;
   padding-top: 10px;
   position: relative;
@@ -12,8 +13,9 @@
     }
 
     img {
-      width: 50px;
-      height: 50px;
+      border: 1px solid black;
+      width: 60px;
+      height: 60px;
     }
 
     p {
@@ -33,7 +35,7 @@
       position: absolute;
       bottom: 0;
       left: 0;
-      transform: translate(8.3rem, -3px);
+      transform: translate(10rem, -11px);
     }
   }
 

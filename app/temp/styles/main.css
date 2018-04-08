@@ -467,7 +467,7 @@ body {
   position: relative;
   width: 100%;
   height: 80vh;
-  background-color: rgb(103, 103, 103);
+  background-color: rgb(208, 208, 208);
   top: 70px;
 
 }
@@ -487,7 +487,7 @@ body {
     }
 
 .store {
-  background-color: rgb(103, 103, 103);
+  background-color: rgb(208, 208, 208);
   height: 20vh;
   padding-top: 0;
 }
@@ -732,11 +732,11 @@ padding-right: -20px;
   }
 
 .team-random {
-  background-color: rgb(103, 103, 103);
-  font-size: 1.2rem;
+  background-color: rgb(208, 208, 208);
+  font-size: 1.09rem;
   height: 25vh;
   position: relative;
-
+  color: rgb(6, 122, 137);
 }
 
 .footer-nav {
@@ -809,6 +809,8 @@ padding-right: -20px;
     }
 
 .team-container--inline img {
+      border: 1px solid black;
+      border-radius: 10px;
       width: 50px;
       height: 50px;
     }
@@ -821,6 +823,7 @@ padding-right: -20px;
 .item-container {
   /* background-color: green;
   border: 1px solid black; */
+  color: rgb(6, 122, 137);
   margin-top: 10px;
   padding-top: 10px;
   position: relative;
@@ -833,8 +836,9 @@ padding-right: -20px;
     }
 
 .item-container--inline img {
-      width: 50px;
-      height: 50px;
+      border: 1px solid black;
+      width: 60px;
+      height: 60px;
     }
 
 .item-container--inline p {
@@ -856,6 +860,6 @@ padding-right: -20px;
       position: absolute;
       bottom: 0;
       left: 0;
-      -webkit-transform: translate(8.3rem, -3px);
-              transform: translate(8.3rem, -3px);
+      -webkit-transform: translate(10rem, -11px);
+              transform: translate(10rem, -11px);
     }
