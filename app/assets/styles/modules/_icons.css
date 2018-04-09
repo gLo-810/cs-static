@@ -1,12 +1,14 @@
 .icons {
   position: relative;
   top: 2rem;
+  left: 4.5rem;
+  text-align: center;
 
 
   i {
     color: $mainTeal;
     font-size: 2.3rem;
-    padding-right: 3.5rem;
+    padding-right: 2.5rem;
     font-weight: 300;
   }
 

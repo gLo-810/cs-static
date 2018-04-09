@@ -1,0 +1,19 @@
+.tab {
+  float: left;
+  min-width: 67px;
+  position: absolute;
+  background-color: $mainMatte;
+  color: $mainTeal;
+  top: 0;
+  left: 3px;
+  transform: translateY(-1rem);
+  padding: 5px;
+  border-radius: 5px;
+  text-shadow: 1px 1px 0px $hotPink, 2px 2px 0px black;
+  text-align: center;
+
+  p {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}

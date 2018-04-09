@@ -6,20 +6,17 @@
 
 
   &--section-border {
-    border-top: solid 2px $hotPink;
+    border-top: 1px double $hotPink;
   }
 
-  &--section-border-bottom {
-    border-bottom: solid 2px $hotPink;
-  }
 
   &--pull-logo-left {
-    transform: translateX(-3.1rem);
+    transform: translateX(-5.5rem);
   }
 
   @mixin atMedium {
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: 85px;
+    padding-right: 85px;
   }
 
   @mixin atLarge {

@@ -5,7 +5,7 @@
   margin-top: 10px;
   padding-top: 10px;
   position: relative;
-  font-size: 1.1rem;
+  font-size: 1rem;
 
   &--inline {
     img, p {
@@ -34,21 +34,24 @@
     }
     button {
       position: absolute;
-      bottom: 0;
-      left: 0;
-      transform: translate(10rem, -11px);
+      top: 10px;
+      right: 0;
+      transform: translateX(-5rem);
+      width: 85px;
+      height: 45px;
+
     }
   }
 
   &--next-break {
-    font-size: .8rem;
+    font-size: .7rem;
     img {
       height: 50px;
       width: 50px;
     }
     p {
       margin-top: 0 !important;
-      top: 0;
+      top: 10px;
     }
   }
 }
