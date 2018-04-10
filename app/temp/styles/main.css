@@ -477,7 +477,13 @@ a:hover {
 .video-feed__main-container {
     position: relative;
     top: 6.2rem;
-    /* padding: 30px 0; */
+  }
+
+@media (min-width: 340px) {
+
+.video-feed__main-container {
+      top: 4rem
+  }
   }
 
 .video-feed__video-container iframe {
@@ -485,10 +491,24 @@ a:hover {
       height: 67.5vh;
     }
 
+@media (min-width: 340px) {
+
+.video-feed__video-container iframe {
+        height: 170px
+    }
+  }
+
 .video-feed__chat-container iframe {
       width: 100%;
       height: 67.5vh;
     }
+
+@media (min-width: 340px) {
+
+.video-feed__chat-container iframe {
+        height: 210px
+    }
+  }
 
 .store {
   background-color: rgb(208, 208, 208);
@@ -503,12 +523,23 @@ a:hover {
   background-color: #414141;
   width: 100%;
   z-index: 5;
+  height: 9vh;
 }
+
+@media (min-width: 340px) {
+  }
 
 .primary-nav {
   height: 7vh;
   font-size: 0.8rem;
 }
+
+@media (min-width: 340px) {
+
+.primary-nav {
+    display: none
+}
+  }
 
 @media (min-width: 768px) {
 
@@ -574,8 +605,16 @@ a:hover {
   }
 
 .wrapper--pull-logo-left {
-    -webkit-transform: translateX(-5.5rem);
-            transform: translateX(-5.5rem);
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+
+@media (min-width: 768px) {
+
+.wrapper--pull-logo-left {
+      -webkit-transform: translateX(-5.5rem);
+              transform: translateX(-5.5rem)
+  }
   }
 
 @media (min-width: 768px) {
@@ -596,25 +635,57 @@ a:hover {
 
 .logo {
   font-family: 'Ranga', cursive;
-  font-size: 2rem;
+  font-size: 1rem;
   color: rgb(46, 198, 218);
   text-shadow: 4px 3px 0px #FF00A2, 5px 3px 0px black;
 }
+
+@media (min-width: 768px) {
+
+.logo {
+    font-size: 2rem
+}
+  }
+
+.logo__image {
+    display: none;
+  }
+
+@media (min-width: 768px) {
+
+.logo__image {
+      display: block
+  }
+  }
 
 .logo h1 {
     margin: 0;
   }
 
 .logo--border {
-    border-right: 2px solid rgb(191, 0, 122);
-    text-align: center;
-    padding-top: 10px;
+    border: none;
+  }
+
+@media (min-width: 768px) {
+
+.logo--border {
+      border-right: 2px solid rgb(191, 0, 122);
+      text-align: center;
+      padding-top: 10px
+  }
   }
 
 .logo--name {
-    text-shadow: 1px 2px 0px #FF00A2, 2px 2px 0px black;
-    white-space: nowrap;
-    padding-top: 10px;
+    text-align: center;
+  }
+
+@media (min-width: 768px) {
+
+.logo--name {
+      text-shadow: 1px 2px 0px #FF00A2, 2px 2px 0px black;
+      white-space: nowrap;
+      padding-top: 10px
+  }
   }
 
 .row {
@@ -708,6 +779,14 @@ padding-right: -20px;
   text-align: center;
 
 }
+
+@media (min-width: 340px) {
+
+.icons {
+    display: none
+
+}
+  }
 
 .icons i {
     color: rgb(46, 198, 218);

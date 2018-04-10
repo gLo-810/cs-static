@@ -11,7 +11,11 @@
 
 
   &--pull-logo-left {
-    transform: translateX(-5.5rem);
+    transform: translateX(0);
+    
+    @mixin atMedium {
+      transform: translateX(-5.5rem);
+    }
   }
 
   @mixin atMedium {

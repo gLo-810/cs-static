@@ -4,6 +4,9 @@
   left: 4.5rem;
   text-align: center;
 
+  @mixin atSmall {
+    display: none;
+  }
 
   i {
     color: $mainTeal;

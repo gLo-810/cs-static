@@ -1,22 +1,42 @@
 .logo {
   font-family: 'Ranga', cursive;
-  font-size: 2rem;
+  font-size: 1rem;
   color: $mainTeal;
   text-shadow: 4px 3px 0px $hotPink, 5px 3px 0px black;
+
+  @mixin atMedium {
+    font-size: 2rem;
+  }
+
+  &__image {
+    display: none;
+
+    @mixin atMedium {
+      display: block;
+    }
+  }
 
   h1 {
     margin: 0;
   }
 
   &--border {
-    border-right: 2px solid $darkPink;
-    text-align: center;
-    padding-top: 10px;
+    border: none;
+
+    @mixin atMedium{
+      border-right: 2px solid $darkPink;
+      text-align: center;
+      padding-top: 10px;
+    }
   }
 
   &--name {
-    text-shadow: 1px 2px 0px $hotPink, 2px 2px 0px black;
-    white-space: nowrap;
-    padding-top: 10px;
+    text-align: center;
+
+    @mixin atMedium {
+      text-shadow: 1px 2px 0px $hotPink, 2px 2px 0px black;
+      white-space: nowrap;
+      padding-top: 10px;
+    }
   }
 }
