@@ -476,43 +476,44 @@ a:hover {
 
 .video-feed__main-container {
     position: relative;
-    top: 6.2rem;
+
+    top: 2.5rem;
   }
 
-@media (min-width: 340px) {
+@media (min-width: 768px) {
 
 .video-feed__main-container {
-      top: 4rem
+      top: 6.2rem
   }
   }
 
 .video-feed__video-container iframe {
       width: 100%;
-      height: 67.5vh;
+      min-height: 33.75vh;
     }
 
-@media (min-width: 340px) {
+@media (min-width: 768px) {
 
 .video-feed__video-container iframe {
-        height: 170px
+        height: 67.5vh
     }
   }
 
 .video-feed__chat-container iframe {
       width: 100%;
-      height: 67.5vh;
+      min-height: 39vh;
     }
 
-@media (min-width: 340px) {
+@media (min-width: 768px) {
 
 .video-feed__chat-container iframe {
-        height: 210px
+        height: 67.5vh
     }
   }
 
 .store {
   background-color: rgb(208, 208, 208);
-  height: 20vh;
+  min-height: 20vh;
   padding-top: 0;
   position: relative;
   overflow: visible;
@@ -523,35 +524,18 @@ a:hover {
   background-color: #414141;
   width: 100%;
   z-index: 5;
-  height: 9vh;
 }
-
-@media (min-width: 340px) {
-  }
 
 .primary-nav {
-  height: 7vh;
-  font-size: 0.8rem;
+  display: none;
 }
-
-@media (min-width: 340px) {
-
-.primary-nav {
-    display: none
-}
-  }
 
 @media (min-width: 768px) {
 
 .primary-nav {
-    font-size: 1.8rem
-}
-  }
-
-@media (min-width: 1440px) {
-
-.primary-nav {
-    font-size: 1.2rem
+    font-size: 1.2rem;
+    height: 7vh;
+    display: block
 }
   }
 
@@ -595,8 +579,8 @@ a:hover {
 
 .wrapper {
   overflow: hidden;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
   margin: 0 auto;
 }
 
@@ -620,17 +604,29 @@ a:hover {
 @media (min-width: 768px) {
 
 .wrapper {
-    padding-left: 85px;
-    padding-right: 85px
+    padding-left: 65px;
+    padding-right: 65px
 }
   }
 
 @media (min-width: 1440px) {
 
-    .wrapper--large {
-      padding-left: 15px;
-      padding-right: 15px;
-    }
+.wrapper {
+    padding-left: 75px;
+    padding-right: 75px
+    /* &--large {
+      padding-left: 85px;
+      padding-right: 85px;
+    } */
+}
+  }
+
+@media (min-width: 1920px) {
+
+.wrapper {
+    padding-left: 85px;
+    padding-right: 85px
+}
   }
 
 .logo {
@@ -677,12 +673,12 @@ a:hover {
 
 .logo--name {
     text-align: center;
+    text-shadow: 1px 2px 0px #FF00A2, 2px 2px 0px black;
   }
 
 @media (min-width: 768px) {
 
 .logo--name {
-      text-shadow: 1px 2px 0px #FF00A2, 2px 2px 0px black;
       white-space: nowrap;
       padding-top: 10px
   }
@@ -706,6 +702,10 @@ padding-right: -20px;
 .col-xs-11 {
       width: 100%;
     }
+
+@media (min-width: 768px) {
+    .col--md-3 {width: 25%}
+  }
 
 @media (min-width: 1440px) {
 
@@ -773,17 +773,18 @@ padding-right: -20px;
   }
 
 .icons {
-  position: relative;
-  top: 2rem;
-  left: 4.5rem;
-  text-align: center;
+  display: none;
 
 }
 
-@media (min-width: 340px) {
+@media (min-width: 768px) {
 
 .icons {
-    display: none
+    position: relative;
+    top: 2rem;
+    left: 4.5rem;
+    text-align: center;
+    display: block
 
 }
   }
@@ -821,7 +822,7 @@ padding-right: -20px;
 .team-random {
   background-color: rgb(208, 208, 208);
   font-size: 1.09rem;
-  height: 25vh;
+  min-height: 25vh;
   position: relative;
   color: rgb(6, 122, 137);
 }
@@ -886,10 +887,9 @@ padding-right: -20px;
 
 .team-container {
   /* background-color: green; */
+  /* border: 1px solid black; */
   margin-top: 1.3rem;
 }
-
-/* border: 1px solid black; */
 
 .team-container--inline img, .team-container--inline p {
     display: inline;
@@ -911,11 +911,19 @@ padding-right: -20px;
   /* background-color: green;
   border: 1px solid black; */
   color: rgb(6, 122, 137);
-  margin-top: 10px;
-  padding-top: 10px;
+  margin-top: 15px;
+  /* padding-top: 10px; */
   position: relative;
   font-size: 1rem;
 }
+
+@media (min-width: 768px) {
+
+.item-container {
+    margin-top: 10px;
+    padding-top: 10px
+}
+  }
 
 .item-container--inline img, .item-container--inline p {
     display: inline;
@@ -946,21 +954,44 @@ padding-right: -20px;
       position: absolute;
       top: 10px;
       right: 0;
-      -webkit-transform: translateX(-5rem);
-              transform: translateX(-5rem);
+      -webkit-transform: translate(-1rem, 1.5rem);
+              transform: translate(-1rem, 1.5rem);
       width: 85px;
-      height: 45px;
+      height: 25px;
+      font-size: .8rem;
 
     }
+
+@media (min-width: 768px) {
+
+.item-container--inline button {
+        top: 10px;
+        right: 0;
+        -webkit-transform: translateX(-5rem);
+                transform: translateX(-5rem);
+        width: 85px;
+        height: 45px;
+        font-size: 1rem
+
+    }
+  }
 
 .item-container--next-break {
     font-size: .7rem;
   }
 
 .item-container--next-break img {
-      height: 50px;
-      width: 50px;
+      height: 40px;
+      width: 40px;
     }
+
+@media (min-width: 768px) {
+
+.item-container--next-break img {
+        height: 50px;
+        width: 50px
+    }
+  }
 
 .item-container--next-break p {
       margin-top: 0 !important;
@@ -969,8 +1000,8 @@ padding-right: -20px;
 
 .next-break {
   background-color: rgb(208, 208, 208);
-  height: 10vh;
-  padding-top: 0;
+  min-height: 10vh;
+  padding: 0 0 5px 5px;
   color: rgb(6, 122, 137);
 }
 
@@ -978,8 +1009,17 @@ padding-right: -20px;
     /* background-color: white;
     border: 1px solid black; */
     position: relative;
-    top: 10px;
-    left: 20px;
+    top: 0;
+    left: 0;
+    margin-bottom: 5px;
+  }
+
+@media (min-width: 768px) {
+
+.next-break--text {
+      top: 10px;
+      left: 20px
+  }
   }
 
 .btn {
@@ -1003,19 +1043,31 @@ button:hover {
 
 .tab {
   float: left;
-  min-width: 67px;
+  min-width: 47px;
   position: absolute;
   background-color: #414141;
   color: rgb(46, 198, 218);
   top: 0;
-  left: 3px;
-  -webkit-transform: translateY(-1rem);
-          transform: translateY(-1rem);
+  -webkit-transform: translate(9rem,-.7rem);
+          transform: translate(9rem,-.7rem);
   padding: 5px;
   border-radius: 5px;
   text-shadow: 1px 1px 0px #FF00A2, 2px 2px 0px black;
   text-align: center;
+  font-size: .8rem;
 }
+
+@media (min-width: 768px) {
+
+.tab {
+    min-width: 67px;
+    font-size: 1rem;
+    top: 0;
+    left: 3px;
+    -webkit-transform: translateY(-1rem);
+            transform: translateY(-1rem)
+}
+  }
 
 .tab p {
     margin-top: 0;

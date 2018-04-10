@@ -1,7 +1,7 @@
 .wrapper {
   overflow: hidden;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
   margin: 0 auto;
 
 
@@ -12,23 +12,28 @@
 
   &--pull-logo-left {
     transform: translateX(0);
-    
+
     @mixin atMedium {
       transform: translateX(-5.5rem);
     }
   }
 
   @mixin atMedium {
-    padding-left: 85px;
-    padding-right: 85px;
+    padding-left: 65px;
+    padding-right: 65px;
   }
 
   @mixin atLarge {
+    padding-left: 75px;
+    padding-right: 75px;
+    /* &--large {
+      padding-left: 85px;
+      padding-right: 85px;
+    } */
+  }
 
-    &--large {
-      padding-left: 15px;
-      padding-right: 15px;
-    }
-
+  @mixin atXLarge {
+    padding-left: 85px;
+    padding-right: 85px;
   }
 }

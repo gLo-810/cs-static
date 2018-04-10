@@ -1,6 +1,6 @@
 .store {
   background-color: $lightMatte;
-  height: 20vh;
+  min-height: 20vh;
   padding-top: 0;
   position: relative;
   overflow: visible;

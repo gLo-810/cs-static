@@ -1,7 +1,7 @@
 .team-container {
   /* background-color: green; */
-  margin-top: 1.3rem;
   /* border: 1px solid black; */
+  margin-top: 1.3rem;
 
   &--inline {
     img, p {

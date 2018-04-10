@@ -24,7 +24,7 @@
   }
 }
 
-@define-mixin XLarge {
+@define-mixin atXLarge {
   @media (min-width: 1920px) {
     @mixin-content;
   }

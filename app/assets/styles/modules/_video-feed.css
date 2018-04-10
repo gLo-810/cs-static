@@ -5,20 +5,19 @@
 
   &__main-container {
     position: relative;
-    top: 6.2rem;
 
-    @mixin atSmall {
-      top: 4rem;
+    top: 2.5rem;
+    @mixin atMedium {
+      top: 6.2rem;
     }
   }
 
   &__video-container {
     iframe {
       width: 100%;
-      height: 67.5vh;
-
-      @mixin atSmall{
-        height: 170px;
+      min-height: 33.75vh;
+      @mixin atMedium{
+        height: 67.5vh;
       }
     }
   }
@@ -26,10 +25,10 @@
   &__chat-container {
     iframe {
       width: 100%;
-      height: 67.5vh;
+      min-height: 39vh;
 
-      @mixin atSmall{
-        height: 210px;
+      @mixin atMedium{
+        height: 67.5vh;
       }
     }
   }

@@ -1,17 +1,10 @@
 .primary-nav {
-  height: 7vh;
-  font-size: 0.8rem;
-
-  @mixin atSmall {
-    display: none;
-  }
+  display: none;
 
   @mixin atMedium {
-    font-size: 1.8rem;
-  }
-
-  @mixin atLarge {
     font-size: 1.2rem;
+    height: 7vh;
+    display: block;
   }
 
   ul {
@@ -32,8 +25,6 @@
       padding-left: 4.5%;
     }
   }
-
-
 
   a {
     text-decoration: none;

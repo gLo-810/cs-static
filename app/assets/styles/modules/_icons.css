@@ -1,11 +1,12 @@
 .icons {
-  position: relative;
-  top: 2rem;
-  left: 4.5rem;
-  text-align: center;
-
-  @mixin atSmall {
-    display: none;
+  display: none;
+  
+  @mixin atMedium {
+    position: relative;
+    top: 2rem;
+    left: 4.5rem;
+    text-align: center;
+    display: block;
   }
 
   i {
