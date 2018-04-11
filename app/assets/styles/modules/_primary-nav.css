@@ -1,7 +1,7 @@
 .primary-nav {
   display: none;
 
-  @mixin atMedium {
+  @mixin atLarge {
     font-size: 1.2rem;
     height: 7vh;
     display: block;

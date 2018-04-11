@@ -5,19 +5,29 @@
 
   &__main-container {
     position: relative;
-
     top: 2.5rem;
+
     @mixin atMedium {
       top: 6.2rem;
+      min-height: 90vh;
     }
   }
+
+    @mixin atLarge {
+      height: 70vh;
+    }
 
   &__video-container {
     iframe {
       width: 100%;
       min-height: 33.75vh;
-      @mixin atMedium{
-        height: 67.5vh;
+
+      @mixin atMedium {
+        height: 40vh;
+      }
+
+      @mixin atLarge {
+        height: 67vh;
       }
     }
   }
@@ -27,8 +37,9 @@
       width: 100%;
       min-height: 39vh;
 
-      @mixin atMedium{
-        height: 67.5vh;
+
+      @mixin atLarge{
+        height: 67vh;
       }
     }
   }

@@ -13,14 +13,14 @@
   &--pull-logo-left {
     transform: translateX(0);
 
-    @mixin atMedium {
+    @mixin atLarge {
       transform: translateX(-5.5rem);
     }
   }
 
   @mixin atMedium {
-    padding-left: 65px;
-    padding-right: 65px;
+    padding-left: 25px;
+    padding-right: 25px;
   }
 
   @mixin atLarge {

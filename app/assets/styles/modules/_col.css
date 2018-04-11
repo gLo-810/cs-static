@@ -7,7 +7,14 @@
     }
 
   @mixin atMedium {
+
+    &--md-1 {width: 8.33%}
+    &--md-2 {width: 16.66%}
     &--md-3 {width: 25%}
+    &--md-4 {width: 33%}
+    &--md-5 {width: 43%;}
+    &--md-6 {width: 50%}
+    &--md-8 {width: 66.6%}
   }
 
 

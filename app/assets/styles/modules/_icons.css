@@ -1,7 +1,7 @@
 .icons {
   display: none;
-  
-  @mixin atMedium {
+
+  @mixin atLarge {
     position: relative;
     top: 2rem;
     left: 4.5rem;

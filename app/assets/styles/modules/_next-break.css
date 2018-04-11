@@ -1,8 +1,10 @@
 .next-break {
   background-color: $lightMatte;
-  min-height: 10vh;
+  min-height: 8vh;
   padding: 0 0 5px 5px;
   color: $darkTeal;
+  position: relative;
+  text-align: center;
 
 
   &--text {
@@ -15,7 +17,7 @@
 
     @mixin atMedium {
       top: 10px;
-      left: 20px;
+      left: 15px;
     }
   }
 }
