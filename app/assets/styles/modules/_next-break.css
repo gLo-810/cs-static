@@ -4,7 +4,7 @@
   padding: 0 0 5px 5px;
   color: $darkTeal;
   position: relative;
-  text-align: center;
+  /* text-align: center; */
 
 
   &--text {
