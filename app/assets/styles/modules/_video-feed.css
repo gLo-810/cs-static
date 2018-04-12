@@ -1,6 +1,6 @@
 .video-feed {
   width: 100%;
-  min-height: 80vh;
+  min-height: 81vh;
   background-color: $lightMatte;
 
   &__main-container {
@@ -11,7 +11,17 @@
       top: 6.2rem;
       min-height: 90vh;
     }
+
+    @mixin atLarge {
+      top: 5.5rem;
+    }
+
+    @mixin atXLarge {
+      top: 7.2rem;
+    }
   }
+
+
 
     @mixin atLarge {
       height: 70vh;

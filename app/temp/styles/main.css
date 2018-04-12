@@ -469,7 +469,7 @@ a:hover {
 
 .video-feed {
   width: 100%;
-  min-height: 80vh;
+  min-height: 81vh;
   background-color: rgb(208, 208, 208);
 
 }
@@ -484,6 +484,20 @@ a:hover {
 .video-feed__main-container {
       top: 6.2rem;
       min-height: 90vh
+  }
+  }
+
+@media (min-width: 1200px) {
+
+.video-feed__main-container {
+      top: 5.5rem
+  }
+  }
+
+@media (min-width: 1920px) {
+
+.video-feed__main-container {
+      top: 7.2rem
   }
   }
 
@@ -738,8 +752,7 @@ a:hover {
 .logo--border {
       border-right: 2px solid rgb(191, 0, 122);
       text-align: center;
-      padding-top: 10px;
-      min-height: 12vh
+      padding-top: 10px
   }
   }
 
@@ -776,11 +789,12 @@ a:hover {
 .logo--name {
       white-space: nowrap;
       padding-top: 10px;
+      padding-left: 10px;
       top: 0;
       left: 0;
       -webkit-transform: translateX( -5%);
               transform: translateX( -5%);
-      font-size: 1.3rem
+      font-size: 1.5rem
   }
   }
 
@@ -831,7 +845,7 @@ padding-right: -20px;
 
 .col {
 
-    padding-right: 20px
+    padding-right: 10px
 }
 
     .col--video {
@@ -1200,6 +1214,14 @@ padding-right: -20px;
       top: 10px;
       left: 15px
   }
+  }
+
+@media (min-width: 1200px) {
+
+      .next-break--text--pull-right {
+        top: 10px;
+        left: 55px;
+      }
   }
 
 .btn {

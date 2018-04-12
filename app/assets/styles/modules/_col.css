@@ -22,7 +22,7 @@
 
   @mixin atLarge {
 
-    padding-right: 20px;
+    padding-right: 10px;
 
     &--video {
       padding: 0;

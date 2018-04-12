@@ -19,5 +19,13 @@
       top: 10px;
       left: 15px;
     }
+    @mixin atLarge {
+
+      &--pull-right {
+        top: 10px;
+        left: 55px;
+      }
+
+    }
   }
 }
