@@ -3,7 +3,15 @@
 
   @mixin atLarge {
     position: relative;
-    top: 2rem;
+    top: 1rem;
+    left: 4.5rem;
+    text-align: center;
+    display: block;
+  }
+
+  @mixin atXLarge {
+    position: relative;
+    top: 1.5rem;
     left: 4.5rem;
     text-align: center;
     display: block;
@@ -14,6 +22,16 @@
     font-size: 2.3rem;
     padding-right: 2.5rem;
     font-weight: 300;
+
+    @mixin atLarge {
+      padding-right: 1rem;
+      font-size: 2.3rem;
+    }
+
+    @mixin atXLarge {
+      padding-right: 2rem;
+      font-size: 3rem;
+    }
   }
 
   &--cart {

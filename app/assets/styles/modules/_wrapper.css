@@ -14,6 +14,10 @@
     transform: translateX(0);
 
     @mixin atLarge {
+      transform: translateX(-4rem);
+    }
+
+    @mixin atXLarge {
       transform: translateX(-5.5rem);
     }
   }

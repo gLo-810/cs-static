@@ -1,19 +1,29 @@
 .primary-nav {
   display: none;
+  position: relative;
 
   @mixin atLarge {
+    font-size: 1rem;
+    height: 5vh;
+    display: block;
+    top: 1rem;
+  }
+
+  @mixin atXLarge {
     font-size: 1.2rem;
     height: 7vh;
     display: block;
+    top: 1rem;
+    padding: 16px;
   }
 
   ul {
     margin: 0;
     text-align: center;
-    width:100%;
+    width: 100%;
 
     @mixin atLarge {
-      padding: 35px 0 0 0;
+      padding: 0;
     }
   }
 
@@ -22,7 +32,7 @@
     display: inline;
 
     @mixin atLarge {
-      padding-left: 4.5%;
+      padding-left: 2%;
     }
   }
 

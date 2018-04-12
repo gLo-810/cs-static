@@ -9,14 +9,27 @@
     font-size: 2rem;
   }
 
+  @mixin atLarge {
+    font-size: 1.5rem;
+
+  }
+
+  @mixin atXLarge {
+    font-size: 2rem;
+  }
+
   &__image {
     display: none;
 
     @mixin atMedium {
       display: block;
-      
+
       h1 {
         padding-right: 2rem;
+
+        @mixin atLarge{
+          padding-right: 1rem;
+        }
       }
     }
   }
@@ -34,6 +47,18 @@
       text-align: center;
       padding-top: 10px;
     }
+    @mixin atLarge{
+      border-right: 2px solid $darkPink;
+      text-align: center;
+      padding-top: 10px;
+      min-height: 12vh;
+    }
+    @mixin atXLarge{
+      border-right: 2px solid $darkPink;
+      text-align: center;
+      padding-top: 10px;
+      min-height: 10vh;
+    }
   }
 
   &--name {
@@ -47,6 +72,22 @@
       top: 0;
       left: 0;
       transform: translateX(35%);
+    }
+    @mixin atLarge{
+      white-space: nowrap;
+      padding-top: 10px;
+      top: 0;
+      left: 0;
+      transform: translateX( -5%);
+      font-size: 1.3rem;
+    }
+    @mixin atXLarge {
+      white-space: nowrap;
+      padding-top: 10px;
+      top: 0;
+      left: 0;
+      transform: translateX(5%);
+      font-size: 2rem;
     }
   }
 }
