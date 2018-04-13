@@ -471,6 +471,7 @@ a:hover {
   width: 100%;
   min-height: 81vh;
   background-color: rgb(208, 208, 208);
+  padding-bottom: 2rem;
 
 }
 
@@ -490,7 +491,8 @@ a:hover {
 @media (min-width: 1200px) {
 
 .video-feed__main-container {
-      top: 5.5rem
+      top: 5.5rem;
+      min-height: 90vh
   }
   }
 
@@ -524,6 +526,15 @@ a:hover {
 @media (min-width: 1200px) {
 
 .video-feed__video-container iframe {
+        /* width: 50%; */
+        height: 67vh
+    }
+  }
+
+@media (min-width: 1920px) {
+
+.video-feed__video-container iframe {
+        width: 100%;
         height: 67vh
     }
   }
@@ -536,6 +547,7 @@ a:hover {
 @media (min-width: 1200px) {
 
 .video-feed__chat-container iframe {
+        /* width: 50%; */
         height: 67vh
     }
   }
@@ -566,7 +578,8 @@ a:hover {
     font-size: 1rem;
     height: 5vh;
     display: block;
-    top: 1rem
+    top: 1rem;
+    left: 4rem
 }
   }
 
@@ -577,7 +590,8 @@ a:hover {
     height: 7vh;
     display: block;
     top: 1rem;
-    padding: 16px
+    left: 0;
+    padding: 1rem
 }
   }
 
@@ -602,6 +616,13 @@ a:hover {
 
 .primary-nav li {
       padding-left: 2%
+  }
+  }
+
+@media (min-width: 1920px) {
+
+.primary-nav li {
+      padding-left: 5%
   }
   }
 
@@ -664,10 +685,6 @@ a:hover {
 .wrapper {
     padding-left: 75px;
     padding-right: 75px
-    /* &--large {
-      padding-left: 85px;
-      padding-right: 85px;
-    } */
 }
   }
 
@@ -836,7 +853,7 @@ padding-right: -20px;
     .col--md-2 {width: 16.66%}
     .col--md-3 {width: 25%}
     .col--md-4 {width: 33%}
-    .col--md-5 {width: 43%;}
+    .col--md-5 {width: 43%}
     .col--md-6 {width: 50%}
     .col--md-8 {width: 66.6%}
   }
@@ -859,6 +876,10 @@ padding-right: -20px;
 
     .col--lg-1 {
       width: 8.33%;
+    }
+
+    .col--lg-1-half {
+      width: 11%;
     }
 
     .col--lg-2 {
@@ -904,6 +925,17 @@ padding-right: -20px;
     .col--lg-11 {
       width: 91.66%;
     }
+  }
+
+@media (min-width: 1920px) {
+
+    .col--xl-1 {width: 8.33%;}
+    .col--xl-2 {width: 16.66%;}
+    .col--xl-3 {width: 25%;}
+    .col--xl-4 {width: 33%;}
+    .col--xl-5 {width: 43%;}
+    .col--xl-6 {width: 50%;}
+    .col--xl-8 {width: 66.6%;}
   }
 
 .icons {
@@ -960,7 +992,22 @@ padding-right: -20px;
 
 .icons--cart {
     top: 0;
+
     font-weight: 300;
+  }
+
+@media (min-width: 1200px) {
+
+.icons--cart {
+      left: 1rem
+  }
+  }
+
+@media (min-width: 1920px) {
+
+.icons--cart {
+      left: 3rem
+  }
   }
 
 .footer {
@@ -1062,6 +1109,14 @@ padding-right: -20px;
 }
   }
 
+@media (min-width: 1200px) {
+
+.team-container {
+    font-size: 1rem;
+    padding: 0
+}
+  }
+
 .team-container--inline img, .team-container--inline p {
     display: inline;
     }
@@ -1078,6 +1133,22 @@ padding-right: -20px;
 .team-container--inline img {
         width: 40px;
         height: 40px
+    }
+  }
+
+@media (min-width: 1200px) {
+
+.team-container--inline img {
+        width: 50px;
+        height: 50px
+    }
+  }
+
+@media (min-width: 1920px) {
+
+.team-container--inline img {
+        width: 60px;
+        height: 60px
     }
   }
 
@@ -1098,6 +1169,13 @@ padding-right: -20px;
 
 .item-container {
     margin: 20px 50px 10px 0
+}
+  }
+
+@media (min-width: 1200px) {
+
+.item-container {
+    margin: .5rem 0
 }
   }
 
@@ -1164,6 +1242,24 @@ padding-right: -20px;
     }
   }
 
+@media (min-width: 1200px) {
+
+.item-container--inline button {
+        -webkit-transform: translateX(-1.2rem);
+                transform: translateX(-1.2rem)
+
+    }
+  }
+
+@media (min-width: 1920px) {
+
+.item-container--inline button {
+        -webkit-transform: translateX(-10rem);
+                transform: translateX(-10rem)
+
+    }
+  }
+
 .item-container--next-break {
     font-size: .7rem;
     margin: 0 50px 0 0;
@@ -1195,9 +1291,8 @@ padding-right: -20px;
   padding: 0 0 5px 5px;
   color: rgb(6, 122, 137);
   position: relative;
-}
 
-/* text-align: center; */
+}
 
 .next-break--text {
     /* background-color: white;
@@ -1218,10 +1313,16 @@ padding-right: -20px;
 
 @media (min-width: 1200px) {
 
-      .next-break--text--pull-right {
-        top: 10px;
-        left: 55px;
-      }
+.next-break--text {
+        top: 0
+  }
+  }
+
+@media (min-width: 1920px) {
+
+.next-break--text {
+        top: 10px
+  }
   }
 
 .btn {

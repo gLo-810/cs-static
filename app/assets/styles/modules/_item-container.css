@@ -8,7 +8,10 @@
 
   @mixin atMedium {
     margin: 20px 50px 10px 0;
+  }
 
+  @mixin atLarge {
+    margin: .5rem 0;
   }
 
   &--inline {
@@ -61,6 +64,14 @@
         width: 60px;
         height: 25px;
         padding: 0;
+      }
+
+      @mixin atLarge {
+        transform: translateX(-1.2rem);
+      }
+
+      @mixin atXLarge {
+        transform: translateX(-10rem);
       }
 
     }

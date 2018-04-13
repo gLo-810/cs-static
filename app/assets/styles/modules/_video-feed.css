@@ -2,10 +2,12 @@
   width: 100%;
   min-height: 81vh;
   background-color: $lightMatte;
+  padding-bottom: 2rem;
 
   &__main-container {
     position: relative;
     top: 2.5rem;
+
 
     @mixin atMedium {
       top: 6.2rem;
@@ -14,6 +16,7 @@
 
     @mixin atLarge {
       top: 5.5rem;
+      min-height: 90vh;
     }
 
     @mixin atXLarge {
@@ -37,6 +40,12 @@
       }
 
       @mixin atLarge {
+        /* width: 50%; */
+        height: 67vh;
+      }
+
+      @mixin atXLarge {
+        width: 100%;
         height: 67vh;
       }
     }
@@ -49,6 +58,7 @@
 
 
       @mixin atLarge{
+        /* width: 50%; */
         height: 67vh;
       }
     }

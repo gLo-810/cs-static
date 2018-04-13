@@ -36,7 +36,15 @@
 
   &--cart {
     top: 0;
+
     font-weight: 300;
+
+    @mixin atLarge {
+      left: 1rem;
+    }
+    @mixin atXLarge {
+      left: 3rem;
+    }
   }
 
 }

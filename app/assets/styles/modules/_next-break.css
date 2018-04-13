@@ -4,7 +4,6 @@
   padding: 0 0 5px 5px;
   color: $darkTeal;
   position: relative;
-  /* text-align: center; */
 
 
   &--text {
@@ -19,13 +18,14 @@
       top: 10px;
       left: 15px;
     }
+
     @mixin atLarge {
+        top: 0;
+    }
 
-      &--pull-right {
+    @mixin atXLarge {
         top: 10px;
-        left: 55px;
-      }
-
     }
   }
+
 }
