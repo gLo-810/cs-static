@@ -12,12 +12,24 @@
   text-align: center;
   font-size: .8rem;
 
+  @mixin atSmall {
+    display: none;
+  }
+
   @mixin atMedium {
     min-width: 67px;
     font-size: 1rem;
     top: 0;
     left: 3px;
     transform: translateY(-1rem);
+  }
+
+  @mixin atLarge {
+    display: block;
+  }
+
+  @mixin atXLarge {
+    display: block;
   }
 
   p {

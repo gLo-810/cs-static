@@ -1,7 +1,7 @@
 .team-container {
   /* background-color: green; */
   /* border: 1px solid black; */
-  margin-top: 1.3rem;
+  margin: 1rem 0;
 
   @mixin atMedium {
     margin-bottom: 1rem;
@@ -15,9 +15,14 @@
   }
 
   &--inline {
+
     img, p {
     display: inline;
     }
+
+
+
+
 
     img {
       border: 1px solid black;

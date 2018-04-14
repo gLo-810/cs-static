@@ -2,12 +2,13 @@
   /* background-color: green;
   border: 1px solid black; */
   color: $darkTeal;
-  margin-top: 15px;
+  margin: 15px 0;
   position: relative;
+  min-height: 4.6rem;
 
 
   @mixin atMedium {
-    margin: 20px 50px 10px 0;
+    margin: 20px 0;
   }
 
   @mixin atLarge {
@@ -19,6 +20,9 @@
     display: inline;
     }
 
+    @mixin atSmall {
+      font-size: .9rem;
+    }
 
     img {
       border: 1px solid black;
@@ -35,15 +39,25 @@
       position: absolute;
       margin-left: 5px;
 
+
     }
     p:first-of-type {
       margin-top: 0;
       margin-bottom: 0;
+
     }
 
     p:last-of-type {
-      margin-top: 32px;
+      margin-top: 2rem;
       margin-bottom: 0;
+
+      @mixin atSmall {
+        margin-top: 2.6rem;
+      }
+
+      @mixin atMedium {
+        margin-top: 2rem;
+      }
     }
     button {
       position: absolute;
@@ -57,7 +71,7 @@
       @mixin atMedium {
         top: 10px;
         right: 0;
-        transform: translateX(1.2rem);
+        transform: translate(-1.8rem, 1.5rem);
         width: 85px;
         height: 45px;
         font-size: .9rem;
@@ -67,11 +81,13 @@
       }
 
       @mixin atLarge {
-        transform: translateX(-1.2rem);
+        transform: translate(-1.2rem, -1rem));
       }
 
       @mixin atXLarge {
-        transform: translateX(-10rem);
+        transform: translate(-4.5rem, -.7rem);
+        width: 85px;
+        height: 50px;
       }
 
     }

@@ -35,5 +35,10 @@
   @mixin atXLarge {
     padding-left: 85px;
     padding-right: 85px;
+
+    &--section-padding {
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
   }
 }
