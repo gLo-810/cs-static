@@ -81,7 +81,9 @@
       }
 
       @mixin atLarge {
-        transform: translate(-1.2rem, -1rem));
+        transform: translate(-4.5rem, -.7rem);
+        width: 85px;
+        height: 50px;
       }
 
       @mixin atXLarge {

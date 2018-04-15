@@ -25,6 +25,7 @@
 
     @mixin atLarge {
         top: 0;
+        padding-right: 2rem;
     }
 
     @mixin atXLarge {

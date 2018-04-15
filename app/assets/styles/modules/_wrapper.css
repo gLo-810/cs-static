@@ -30,6 +30,11 @@
   @mixin atLarge {
     padding-left: 75px;
     padding-right: 75px;
+
+    &--section-padding {
+      padding-top: 20px;
+      padding-bottom: 5px;
+    }
   }
 
   @mixin atXLarge {

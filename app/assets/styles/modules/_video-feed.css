@@ -15,8 +15,8 @@
     }
 
     @mixin atLarge {
-      top: .5rem;
-      min-height: 70vh;
+      top: 5.5rem;
+      min-height: 90vh;
     }
 
     @mixin atXLarge {
@@ -24,6 +24,11 @@
     }
   }
 
+
+
+    @mixin atLarge {
+      height: 70vh;
+    }
 
   &__video-container {
     iframe {
@@ -35,7 +40,7 @@
       }
 
       @mixin atLarge {
-        width: 70%;
+        width: 100%;
         height: 67vh;
       }
 
@@ -53,7 +58,7 @@
 
 
       @mixin atLarge{
-        width: 100%;
+        /* width: 50%; */
         height: 67vh;
       }
     }
