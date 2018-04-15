@@ -570,15 +570,36 @@ a:hover {
 .primary-nav {
   display: none;
   position: relative;
+  font-size: 1rem;
+  top: 0;
+  left: 0;
+  -webkit-transform: translate(0,-10%);
+          transform: translate(0,-10%);
 }
+
+.primary-nav--expand {
+    display: block;
+  }
+
+@media (min-width: 650px) {
+
+.primary-nav {
+    display: block;
+    font-size: 1rem;
+    top: 0;
+    left: 0;
+    -webkit-transform: translate(0,-10%);
+            transform: translate(0,-10%)
+}
+  }
 
 @media (min-width: 1200px) {
 
 .primary-nav {
+    display: block;
     font-size: 1rem;
     height: 5vh;
-    display: block;
-    top: 1rem;
+    top: 0;
     left: 4rem
 }
   }
@@ -599,6 +620,7 @@ a:hover {
     margin: 0;
     text-align: center;
     width: 100%;
+    padding: 0;
   }
 
 @media (min-width: 1200px) {
@@ -609,13 +631,16 @@ a:hover {
   }
 
 .primary-nav li {
-    display: inline;
+    display: block;
+    border-bottom: 1px solid #FF00A2;
   }
 
 @media (min-width: 1200px) {
 
 .primary-nav li {
-      padding-left: 2%
+      display: inline;
+      padding-left: 2%;
+      border-bottom: none
   }
   }
 
@@ -624,6 +649,10 @@ a:hover {
 .primary-nav li {
       padding-left: 5%
   }
+  }
+
+.primary-nav li:last-child {
+    border-bottom: none;
   }
 
 .primary-nav a {
@@ -1472,3 +1501,44 @@ button:hover {
 .filler__content img {
         border: 1px solid black;
       }
+
+.mobile-menu {
+  float: right;
+  position: absolute;
+  width: 10px;
+  top: 0;
+  right: 0;
+  -webkit-transform: translate(-2rem, 50%);
+          transform: translate(-2rem, 50%);
+}
+
+.mobile-menu::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+@media (min-width: 650px) {
+
+.mobile-menu {
+    font-size: 2rem;
+    float: right;
+    width: 10px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    -webkit-transform: translate(-3rem, 2rem);
+            transform: translate(-3rem, 2rem)
+}
+  }
+
+@media (min-width: 1200px) {
+
+.mobile-menu {
+    display: none
+}
+  }
+
+.mobile-menu i {
+    color: rgb(46, 198, 218);
+  }

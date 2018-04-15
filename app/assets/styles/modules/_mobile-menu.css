@@ -1,0 +1,30 @@
+.mobile-menu {
+  @mixin clearfix;
+  float: right;
+  position: absolute;
+  width: 10px;
+  top: 0;
+  right: 0;
+  transform: translate(-2rem, 50%);
+
+
+
+  @mixin atMedium {
+    font-size: 2rem;
+    float: right;
+    width: 10px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-3rem, 2rem);
+  }
+
+  @mixin atLarge {
+    display: none;
+  }
+
+
+  i {
+    color: $mainTeal;
+  }
+}

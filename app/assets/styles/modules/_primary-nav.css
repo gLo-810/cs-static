@@ -1,12 +1,29 @@
 .primary-nav {
   display: none;
   position: relative;
+  font-size: 1rem;
+  top: 0;
+  left: 0;
+  transform: translate(0,-10%);
+
+
+  &--expand {
+    display: block;
+  }
+
+  @mixin atMedium {
+    display: block;
+    font-size: 1rem;
+    top: 0;
+    left: 0;
+    transform: translate(0,-10%);
+  }
 
   @mixin atLarge {
+    display: block;
     font-size: 1rem;
     height: 5vh;
-    display: block;
-    top: 1rem;
+    top: 0;
     left: 4rem;
   }
 
@@ -23,6 +40,8 @@
     margin: 0;
     text-align: center;
     width: 100%;
+    padding: 0;
+
 
     @mixin atLarge {
       padding: 0;
@@ -31,15 +50,22 @@
 
 
   li {
-    display: inline;
+    display: block;
+    border-bottom: 1px solid $hotPink;
 
     @mixin atLarge {
+      display: inline;
       padding-left: 2%;
+      border-bottom: none;
     }
-    
+
     @mixin atXLarge {
       padding-left: 5%;
     }
+  }
+
+  li:last-child {
+    border-bottom: none;
   }
 
   a {
