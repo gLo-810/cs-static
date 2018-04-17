@@ -5,6 +5,7 @@
   width: 10px;
   top: 0;
   right: 0;
+  cursor: pointer;
   transform: translate(-2rem, 50%);
 
 
@@ -16,7 +17,7 @@
     position: absolute;
     top: 0;
     right: 0;
-    transform: translate(-3rem, 2rem);
+    transform: translate(-3rem, 1.7rem);
   }
 
   @mixin atLarge {

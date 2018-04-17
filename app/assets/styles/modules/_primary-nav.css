@@ -4,36 +4,34 @@
   font-size: 1rem;
   top: 0;
   left: 0;
-  transform: translate(0,-10%);
 
 
-  &--expand {
+  .expand {
     display: block;
   }
 
   @mixin atMedium {
-    display: block;
-    font-size: 1rem;
-    top: 0;
-    left: 0;
-    transform: translate(0,-10%);
+    width: 100%;
+    display: none;
+    font-size: 1.2rem;
   }
 
   @mixin atLarge {
-    display: block;
+    display: block !important;
     font-size: 1rem;
     height: 5vh;
-    top: 0;
-    left: 4rem;
+    top: 1.3rem;
+    left: 0;
   }
 
   @mixin atXLarge {
     font-size: 1.2rem;
     height: 7vh;
-    display: block;
+    display: block !important;
     top: 1rem;
     left: 0;
     padding: 1rem;
+
   }
 
   ul {

@@ -9,14 +9,23 @@ class MobileMenu {
 
   //events to watch for such as click
   events(){
+  
     
-    this.menuButton.click(function(){
-      
-        $('.primary-nav').slideToggle();
+    this.menuButton.on('click', function(){
         
+          $('.primary-nav').slideToggle(400, function() {
+            $(this).toggleClass('.expand');
+            
+          });
+            
+
     });
     
   }
+  
+  
+  
+  
 
 }
 

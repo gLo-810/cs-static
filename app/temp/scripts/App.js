@@ -115,9 +115,11 @@ var MobileMenu = function () {
     key: 'events',
     value: function events() {
 
-      this.menuButton.click(function () {
+      this.menuButton.on('click', function () {
 
-        (0, _jquery2.default)('.primary-nav').slideToggle();
+        (0, _jquery2.default)('.primary-nav').slideToggle(400, function () {
+          (0, _jquery2.default)(this).toggleClass('.expand');
+        });
       });
     }
   }]);
