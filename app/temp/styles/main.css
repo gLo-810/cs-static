@@ -575,6 +575,8 @@ a:hover {
   font-size: 1rem;
   top: 0;
   left: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .primary-nav .expand {
@@ -994,7 +996,7 @@ padding-right: -20px;
 
 .icons {
     position: relative;
-    top: 1rem;
+    top: 1.5rem;
     text-align: center;
     display: block
 
@@ -1023,8 +1025,8 @@ padding-right: -20px;
 @media (min-width: 1200px) {
 
 .icons i {
-      padding-right: 1rem;
-      font-size: 2.3rem
+      padding-right: 1.5rem;
+      font-size: 1.7rem
   }
   }
 
