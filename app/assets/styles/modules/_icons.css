@@ -3,7 +3,7 @@
 
   @mixin atLarge {
     position: relative;
-    top: 1rem;
+    top: 1.5rem;
     text-align: center;
     display: block;
 
@@ -24,8 +24,8 @@
     font-weight: 300;
 
     @mixin atLarge {
-      padding-right: 1rem;
-      font-size: 2.3rem;
+      padding-right: 1.5rem;
+      font-size: 1.7rem;
 
     }
 
@@ -34,6 +34,10 @@
       font-size: 3rem;
       left: 3.5rem;
     }
+  }
+
+  i:hover {
+    color: $hotPink;
   }
 
   &--cart {

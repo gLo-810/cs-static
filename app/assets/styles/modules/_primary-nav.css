@@ -2,18 +2,22 @@
   display: none;
   position: relative;
   font-size: 1rem;
-  top: 0;
+  top: 10px;
   left: 0;
+  height: 24vh;
 
 
   .expand {
     display: block;
   }
 
+
   @mixin atMedium {
     width: 100%;
     display: none;
     font-size: 1.2rem;
+    top: 0;
+    height: 31vh;
   }
 
   @mixin atLarge {
@@ -75,5 +79,9 @@
     @mixin atMedium {
       padding: 8px;
     }
+  }
+
+  a:hover {
+    color: $hotPink;
   }
 }
