@@ -36,6 +36,10 @@
     }
   }
 
+  i:hover {
+    color: $hotPink;
+  }
+
   &--cart {
     top: 0;
 

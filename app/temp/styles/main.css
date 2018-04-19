@@ -573,7 +573,7 @@ a:hover {
   display: none;
   position: relative;
   font-size: 1rem;
-  top: 0;
+  top: 10px;
   left: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -588,7 +588,9 @@ a:hover {
 .primary-nav {
     width: 100%;
     display: none;
-    font-size: 1.2rem
+    font-size: 1.2rem;
+    top: 0;
+    height: 31vh
 }
   }
 
@@ -666,6 +668,10 @@ a:hover {
 .primary-nav a {
       padding: 8px
   }
+  }
+
+.primary-nav a:hover {
+    color: #FF00A2;
   }
 
 .wrapper {
@@ -1037,6 +1043,10 @@ padding-right: -20px;
       font-size: 3rem;
       left: 3.5rem
   }
+  }
+
+.icons i:hover {
+    color: #FF00A2;
   }
 
 .icons--cart {
