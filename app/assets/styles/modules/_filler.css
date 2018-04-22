@@ -1,6 +1,6 @@
 .filler {
     width: 100%;
-    height: 94vh;
+    min-height: 94vh;
     background-color: $lightMatte;
     margin: 0 auto;
     color: $darkTeal;

@@ -4,7 +4,7 @@
   font-size: 1rem;
   top: 10px;
   left: 0;
-  height: 24vh;
+  height: 33vh;
 
 
 
@@ -18,7 +18,7 @@
     display: none;
     font-size: 1.2rem;
     top: 0;
-    height: 31vh;
+    height: 43vh;
   }
 
   @mixin atLarge {
