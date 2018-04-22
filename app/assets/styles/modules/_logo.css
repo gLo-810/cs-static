@@ -5,6 +5,11 @@
   text-shadow: 4px 3px 0px $hotPink, 5px 3px 0px black;
   position: relative;
 
+  a {
+    text-decoration: none;
+    color: $mainTeal;
+  }
+
   @mixin atMedium {
     font-size: 2rem;
   }

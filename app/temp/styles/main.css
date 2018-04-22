@@ -747,6 +747,11 @@ a:hover {
   position: relative;
 }
 
+.logo a {
+    text-decoration: none;
+    color: rgb(46, 198, 218);
+  }
+
 @media (min-width: 650px) {
 
 .logo {
